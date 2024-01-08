@@ -1,1 +1,11 @@
-# time_series_analysis_with_neural_network
+## time_series_analysis_with_neural_network
+The data in question is the turbine operation data 
+The project here is to showcase a novel approach of using convoulutional neural network to analysing time series as if it is a grey scale image and trying to find faulty turbine operation sequence .
+![Screenshot from 2024-01-08 08-46-11](https://github.com/soumya93jit/time_series_analysis_with_neural_network/assets/114474404/40b2aaf3-1c61-49f6-a7b2-35ab7ea260a7)
+
+In modern industrial applications, sensors are used to observe key machine characteristics. These can help detect slight deviations and issues to avoid major system failures through targeted repairs while keeping maintenance costs under control. Such sensors are critical in the operation of wind turbines. Due to fluctuating winds that can negatively impact the turbines and the high costs of maintenance, specifically for offshore turbines, sensor readings need to be reliably converted into an operating mode. That is, given the sensor readings over time, we want to know whether the turbine is operating correctly or
+whether one of several issues is present. If issues are detected (reliably), targeted efforts can be made to alleviate them before a major system failure occurs.
+The data represent sensor readings and operating modes for 4,000 turbine runs. time_series_1 and time_series_2 are NumPy arrays of shape (4000,5000), respectively. Each observation corresponds to 5,000 sensor readings from a turbine over time by one of the two sensors (time_series_1 measures the pitch angle in each second of operation, and time_series_2 measures the generator torque). y is the operating mode for each of the 4,000 turbine runs (0 if
+the turbine is healthy, 1 if the generator torque is faulty, 2 if the pitch angle is faulty, and 3 if both are faulty). Note that the dataset is balanced in that each operating mode is represented equally often. The overall objective is to predict the operating mode of a turbine as a function of the sensor readings.
+Detail description of each model used is available within the ipynb file.
+Due to confidentiality, data can not be shared here. Kindly contact the repository owner for more information.
